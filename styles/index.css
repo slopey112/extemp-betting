@@ -1,0 +1,47 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: linear-gradient(to bottom, #71c7ff, white);
+}
+
+main {
+	height: 100%;
+	display: flex;
+}
+
+#left {
+	height: 100%;
+	width: 50%;
+	text-align: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+h1 {
+	font-family: "Oswald", sans-serif;
+	font-size: 5vh !important;
+	text-transform: uppercase;
+}
+
+#heading-style {
+	color: #407cff;
+}
+
+p {
+	font-family: "Alata", sans-serif;
+}
+
+#right {
+	height: 100%; 
+	width: 50%;
+}
+
+.nav-link {
+	color: black;
+}
