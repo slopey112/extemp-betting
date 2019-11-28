@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js">
 		<link href="https://fonts.googleapis.com/css?family=Alata|Oswald&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<nav>
@@ -14,18 +15,42 @@
 				<li class="nav-item">
 					<a class="nav-link" href="index.html">Home</a>
 				</li>
+				<div id="buffer"></div>
 				<li class="nav-item">
 					<a class="nav-link" href="login.html">Login</a>
 				</li>
 			</ul>
 		</nav>
-		<main>
+		<main id="pane">
 			<div id="left">
-				<h1>International<br>Extemp<br><span id="heading-style">Betting</span></h1>
+				<h1>International<br>Extemp<br><span id="heading-style">Topic Betting</span></h1>
 				<p>by <a href="https://github.com/slopey112">slopey112</a><p>
 			</div>
 			<div id="right">
-			<div>
+				<table class="table">
+					<thead>
+						<tr id="head">
+							<th scope="col">Name</th>
+							<th scope="col">Start</th>
+							<th scope="col">End</th>
+							<th scope="col">Status</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>dummy</td>
+							<td>test</td>
+							<td>test</td>
+							<td>test</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</main>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-analytics.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-auth.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-firestore.js"></script>
+		<script src="scripts/script.js"></script>
 	</body>
 </html>
